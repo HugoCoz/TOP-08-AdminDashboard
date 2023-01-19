@@ -1,3 +1,8 @@
+:root {
+    height: 100vh;
+    margin: 0 auto;
+}
+
 #top-header {
     padding: 10px;
     display: flex;
@@ -93,6 +98,42 @@ button {
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+#project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#project-cards > .card {
+    background-color: white;
+    padding: 1px 10px 1px 10px;
+    width: 250px;
+    border-left: solid 5px #125174
+}
+
+#project-cards > .card > .title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#project-cards > .card > .card-text {
+    text-align: justify;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card-icons > img {
+    width: 20px;
 }
 
 #content {
